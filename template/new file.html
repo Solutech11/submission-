@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student Submit</title>
+    <style>
+        div{
+            transition-duration: 1s;
+            /* padding-left: 3; */
+            
+        }
+    </style>
+</head>
+<body style="padding: 0%; background-color: brown; height: 100%; display: flex; justify-content: center; align-items: center;">
+
+    <div class="change" style="margin: 0%; background-color: coral; height: 40vw; display: flex; justify-content: center; align-items: center; width: 90%; margin-top: 2%;">
+        <h1 style="font-size: 8vw;">Theresa will work on it</h1>
+    </div>
+</body>
+<script>
+    var changer = document.querySelector(".change");
+    var i = 1;
+    var g =1;
+
+    setInterval(function() {
+            if (g==0) {
+                changer.style.backgroundColor= "coral";
+                changer.style.borderRadius = "30px";
+                changer.style.paddingLeft="40px";
+                g++;
+            
+            } else if(g==1) {
+                changer.style.backgroundColor= "yellow";
+                changer.style.borderRadius = "60px";
+                changer.style.paddingLeft="-40px";
+                g++
+            } else if (g==2) {
+                changer.style.backgroundColor= "pink";
+                changer.style.borderRadius = "100px";
+                changer.style.paddingTop="40px";
+                g++
+            } else if (g==3){
+                changer.style.backgroundColor= "blue";
+                changer.style.borderRadius = "150px";
+                changer.style.paddingTop="-40px";
+                g++
+            }else if (g== 4){
+                changer.style.backgroundColor= "pink";
+                changer.style.borderRadius = "310px";
+                changer.style.paddingLeft="70px";
+                g++
+            }else{
+                changer.style.backgroundColor= "red";
+                changer.style.borderRadius = "0px";
+                g=0
+            }
+
+        
+    }, 1000);
+    changer.addEventListener("click",function(){
+        window.open('/submission', '_parent')
+    })
+    // setTimeout(function() {
+    // }, 2000);
+    // set
+
+</script>
+
+</html>
