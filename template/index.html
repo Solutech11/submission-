@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<style>
+  body{height: 100%;
+  width: 100%;
+  }
+    .button {
+  /* position:absolute; */
+  background-color: #000; 
+  border-radius: 20px;
+  border-width: 0ch;
+  color:white;
+  padding: 2.5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #0a0a0a;} 
+.button3 {background-color: #f44336;} 
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  /* padding: 10px; */
+  /* text-align: center; */
+  background: #000;
+  color: white;
+  margin-bottom: 0%;
+  /* height: 10vw; */
+  /* font-size: 30px; */
+}
+
+#ooo{
+    width: 100%;
+    height: 90%;
+}
+
+.logo{
+text-align: left;
+height: 10%;
+
+}
+.content {
+  margin-top: -2.4%;
+  background-image: url("../media/media/backgroundIMG.jpg");
+  background-size: 110%;
+  background-repeat:no-repeat;
+  height: 70vh;
+    padding:2%;
+    /* background-color: black; */
+
+
+}
+.header>h1{
+    /* margin-bottom:; */
+    font-size: 3.5vw;
+    margin-top: -2%;
+    color: blanchedalmond;
+    text-align: center;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+
+
+.header .btn {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  /* font-size: 16px; */
+  /* padding: 12px 24px; */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.header .btn:hover {
+  background-color: black;
+}
+
+.container .btn1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  /* font-size: 16px; */
+  /* padding: 12px 24px; */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn1:hover {
+  background-color: rgb(247, 19, 19);
+}
+.center{
+  position: absolute;
+  /* margin-left: 10%; */
+  margin-top: 7%;
+  /* margin-left:%; */
+  display: flex;
+  width: 100%;
+  /* height: 50%; */
+  flex-direction: column;
+  align-items: center;
+}
+.centerLoc{
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.logo{
+  /* max-width: 40%; */
+  width: 20%;
+  /* min-width: 20%; */
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img class="logo" src="../media/media/linco.png">
+  <h1>LSS</h1>
+  <!-- <button class="btn">Button</button> -->
+</div>
+
+<div class="content">
+    <!-- <img id="ooo" src="../media/media/backgroundIMG.jpg"> -->
+    <div class="center">
+      <h2 style="color: #fff; font-size: 2vw;">Lincoln Student submission</h2>
+      <div class="centerLoc">
+        <button class="button button3">Students</button>
+        <button class="button button2" >Lecturers</button>
+      </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <img src="../media/media/backgroundIMG.jpg" alt="Snow" style="width:100%; height:100%;">
+    
+    <button class="btn1">Button1</button>
+
+  </div> -->
+
+</body>
+<script>
+  var btn1 = document.querySelector(".button3"),
+  btn2 = document.querySelector(".button2");
+
+  btn1.addEventListener("click", function(){
+    window.open('/submission', "_self")
+  })
+
+  btn2.addEventListener("click", function(){
+    window.open("/admin","_self")
+  })
+</script>
+</html>

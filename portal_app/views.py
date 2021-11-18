@@ -5,7 +5,7 @@ from django.views.generic import CreateView,TemplateView
 # Create your views here.
 class submission_view(CreateView):
     model=student
-    fields = ['Name', 'subject', 'Assignment_name', 'Large_text', 'Task_Type', 'semester', 'Year', 'Image_Attachment', 'File_Attachment']
+    fields = ['Name', 'subject', 'Assignment_name', 'Task_description', 'Task_Type', 'semester', 'Year', 'Image_Attachment', 'File_Attachment']
     template_name="Submit.html"
     success_url="/"
 

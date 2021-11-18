@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    path('submission/', views.submission_view.as_view()),
+    path('submission/', views.submission_view.as_view(), name="submission"),
     path('', views.mainView.as_view() )
     # path('success', views.)
 
