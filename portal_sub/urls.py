@@ -22,3 +22,6 @@ urlpatterns = [
     # path('', portal_app.submission_view(), name = 'submission_dsaZXDCview'),
     path('', include('portal_app.urls')),
 ]
+admin.site.site_header= "Lincoln Student Submission"
+admin.site.site_title= "LSS/Admin"
+admin.site.index_title ="Lincoln Student Submission"

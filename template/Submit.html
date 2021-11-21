@@ -5,19 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>submission</title>
+    <link rel="shortcut icon" href="../media/media/linco.ico" type="image/x-icon">
     <style>
+        form{
+            text-align: center;
+        }
+        .logo{
+  /* max-width: 40%; */
+  width: 30%;
+  /* min-width: 20%; */
+}
+.header>h1{
+    /* margin-bottom:; */
+    font-size: 3.5vw;
+    margin-top: -2%;
+    color: blanchedalmond;
+    text-align: center;
+}
+.logo{
+text-align: left;
+height: 10%;
 
+}
+body{height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  }
+  .header{
+      background-color: black;
+      width: 100%;
+      
+  }
+  input{
+      width: 20%;
+      margin-bottom: 3%;
+      border-radius: 10px;
+      height: 2rem;
+    
+  }
+  label{
+      text-decoration: underline;
+      /* margin-bottom:40px; */
+  }
+  select{
+    margin-bottom: 3%;
+    height: 2rem;
+      max-width: 20%;
+      min-width: 20%;
+      border-radius: 10px;
+    
+      
+  }
+  textarea{
+    border-radius: 20px;
+      /* max-height: 15vw; */
+      height: 20vw;
+        width: 30%;
+        /* max-width: 50%; */
+  }
     </style>
 </head>
-<body>
+<body style="background-color:whitesmoke;">
+        
+<div class="header">
+    <img class="logo" src="../media/media/linco.png">
+  <h1>LSS</h1>
+  <!-- <button class="btn">Button</button> -->
+</div>
+
+
+
     <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
         {{ form|crispy }}
-        <input type="submit" value="Submit">
-    </form>
+        <input type="submit" value="Submit" style="background-color:red; color:white; width: 10%; font-size: 100%;border-radius: 40px; max-height: 100px; min-height: 50px; max-width: 20%; min-width: 20%;">
+    </form> 
 
 
 
     
 </body>
+<script>
+    var logo =document.querySelector(".logo");
+    var submit
+    logo.addEventListener("click",function(){
+        window.open('/', "_self")
+    })
+    
+</script>
 </html>
